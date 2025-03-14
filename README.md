@@ -44,9 +44,18 @@ This project demonstrates how to integrate PayPal login into a Next.js 14 applic
       NEXT_PUBLIC_PAYPAL_CLIENT_ID=YOUR_PAYPAL_CLIENT_ID
       NEXT_PUBLIC_PAYPAL_SCOPE =YOUR_SCOPES
       NEXT_PUBLIC_PAYPAL_BASE_URL =BASE_URL_FOR_PAY_PAL
+      NEXT_PUBLIC_PAYPAL_REDIRECT_URI=REDIRECT_URI
       ```
 
     - Obtain your `CLIENT_ID` and configure the environment (sandbox for testing, production for live) from the PayPal developer dashboard.
+
+      - **Important**: You must use a publicly accessible URL for the \`NEXT_PUBLIC_PAYPAL_REDIRECT_URI\` because PayPal does not accept \`localhost\` for redirection. You can use [ngrok](https://ngrok.com/) to create a secure tunnel to your localhost for testing purposes.
+
+      To use ngrok, run the following command in your terminal:
+
+      \`\`\`bash
+      ngrok http 3000
+      \`\`\`
 
 4.  **Run the development server:**
 
@@ -90,4 +99,4 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## License
 
-[Your License] (e.g., MIT License)
+(e.g., MIT License)
