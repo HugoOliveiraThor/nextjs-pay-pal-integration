@@ -8,6 +8,12 @@ This project demonstrates how to integrate PayPal login into a Next.js 14 applic
 - **Next.js 14:** Built with the latest version of Next.js, leveraging the App Router features.
 - **Simple Example:** A basic and straightforward example to facilitate understanding of the integration process.
 
+## Diagram
+
+Here is the diagram illustrating the PayPal login integration:
+
+![PayPal Login Diagram](/public/paypal-login.png)
+
 ## Prerequisites
 
 - Node.js (recommended version: 18 or higher)

@@ -1,0 +1,18 @@
+@startuml Paypal Login
+
+package "src" {
+    package "app" {
+        rectangle Home
+        rectangle PaypalCallback
+    }
+
+    package "components" {
+        rectangle PayPalLoginButton
+    }
+}
+
+Home --> PayPalLoginButton : Calls to render button
+PaypalLoginButton --> Home : Redirects to PayPal URL
+PaypalCallback --> Home : Redirects back with code or error
+
+@enduml
