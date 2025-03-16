@@ -25,6 +25,7 @@ const PayPalLoginButton = () => {
 
     if (code) {
       console.log("Login made with success! Code:", code);
+      sessionStorage.setItem("paypal_code", code);
       alert("Login made with success! Code: " + code);
     } else if (error) {
       console.error("Error on the paypal login:", error);
